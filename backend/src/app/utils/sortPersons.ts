@@ -24,7 +24,11 @@ export const sortPersons = async (personsArr: Document[], res: Response) => {
 
 			if (person1 === person2) {
 				continue;
-			}
+      }
+
+      if (person1.get('friend') === '' || person1.get('friend') === null) {
+        continue;
+      }
 
 			await Person.findOne({
 				firstName: person1.get('firstName'),
