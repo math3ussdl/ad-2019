@@ -1,0 +1,11 @@
+.new-person {
+  position: fixed;
+  top: 4.5rem;
+  right: 1.5rem;
+}
+
+.new-sort {
+  @extend .new-person;
+
+  right: 9.5rem;
+}

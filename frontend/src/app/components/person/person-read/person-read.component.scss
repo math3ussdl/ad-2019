@@ -1,0 +1,16 @@
+table {
+  margin-top: 1.5rem;
+	width: 100%;
+
+	.edit {
+		margin-right: 10px;
+
+		> span {
+			color: #d9cd26;
+		}
+	}
+
+	.delete > span {
+		color: #e35e6b;
+	}
+}

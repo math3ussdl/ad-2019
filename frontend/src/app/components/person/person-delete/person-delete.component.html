@@ -1,0 +1,39 @@
+<mat-card>
+	<mat-card-title>Excluir Pessoa</mat-card-title>
+	<form>
+		<div class="name-block">
+			<mat-form-field [style.width.px]="475">
+				<input
+					matInput
+					placeholder="Primeiro Nome"
+					[value]="person.firstName"
+          name="firstName"
+          disabled
+				/>
+			</mat-form-field>
+			<mat-form-field [style.width.px]="475">
+				<input
+					matInput
+					placeholder="Último Nome"
+					[value]="person.lastName"
+          name="lastName"
+          disabled
+				/>
+			</mat-form-field>
+		</div>
+		<mat-form-field>
+			<input
+				matInput
+				placeholder="Email"
+				[value]="person.email"
+        name="email"
+        disabled
+			/>
+		</mat-form-field>
+	</form>
+	<button mat-raised-button (click)="deletePerson()" color="warn">
+		Excluir
+	</button>
+
+	<button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
